@@ -14,8 +14,13 @@
 
 m4_ifndef([AC_AUTOCONF_VERSION],
   [m4_copy([m4_PACKAGE_VERSION], [AC_AUTOCONF_VERSION])])dnl
+<<<<<<< HEAD
 m4_if(m4_defn([AC_AUTOCONF_VERSION]), [2.69],,
 [m4_warning([this file was generated for autoconf 2.69.
+=======
+m4_if(m4_defn([AC_AUTOCONF_VERSION]), [2.71],,
+[m4_warning([this file was generated for autoconf 2.71.
+>>>>>>> 01b4f21 (Removed html and pdf from git tree which can be generated automatically. (#8))
 You have another version of autoconf.  It may work, but is not guaranteed to.
 If you have problems, you may need to regenerate the build system entirely.
 To do so, use the procedure documented by the package, typically `autoreconf'.])])
